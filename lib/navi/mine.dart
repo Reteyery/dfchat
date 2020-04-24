@@ -26,6 +26,43 @@ class _MinePageState extends State<MineDart>{
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
+        color: Colors.black12,
+        child: Column(
+          children: <Widget>[
+            new Container(
+              height: 80,
+              color: Colors.white,
+              padding: EdgeInsets.only(left: 12),
+              child: new Row(
+                children: <Widget>[
+                new Icon(Icons.account_circle,
+                size: 60,
+                ),
+                Padding(padding: EdgeInsets.only(left: 12)),
+                new Text("信息中心",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black54,
+                  ),)],
+              ),
+            ),
+            new Container(
+              height: 60,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.white,
+              margin: EdgeInsets.only(top:0.5),
+              padding: EdgeInsets.only(left: 15),
+              alignment: Alignment.centerLeft,
+              child: new Text("设置",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black54,
+                    fontWeight: FontWeight.bold
+                ),),
+            ),
+          ],
+        ),
       ),
     );
   }
