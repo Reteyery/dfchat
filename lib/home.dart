@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 
 import 'login/login.dart';
 
+/// @author 李扬
+/// @title 主页（底部4个导航栏）
 class HomeDart extends StatefulWidget {
   HomeDart({Key key, this.title}) : super(key: key);
 
