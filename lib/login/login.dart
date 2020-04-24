@@ -1,3 +1,4 @@
+import 'package:dfchat/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -37,6 +38,34 @@ class _LoginPageState extends State<LoginDart> {
   }
 
   Widget _submitButton() {
+    return InkWell(
+      onTap: (){
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => HomeDart()));
+      },
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        padding: EdgeInsets.symmetric(vertical: 15),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Colors.grey.shade200,
+                  offset: Offset(2, 4),
+                  blurRadius: 5,
+                  spreadRadius: 2)
+            ],
+            gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [Colors.greenAccent, Colors.green])),
+        child: Text(
+          '登录',
+          style: TextStyle(fontSize: 20, color: Colors.white),
+        ),
+      ),
+    );
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.symmetric(vertical: 15),
@@ -60,39 +89,6 @@ class _LoginPageState extends State<LoginDart> {
       ),
     );
   }
-
-//  Widget _divider() {
-//    return Container(
-//      margin: EdgeInsets.symmetric(vertical: 10),
-//      child: Row(
-//        children: <Widget>[
-//          SizedBox(
-//            width: 20,
-//          ),
-//          Expanded(
-//            child: Padding(
-//              padding: EdgeInsets.symmetric(horizontal: 10),
-//              child: Divider(
-//                thickness: 1,
-//              ),
-//            ),
-//          ),
-//          Text('or'),
-//          Expanded(
-//            child: Padding(
-//              padding: EdgeInsets.symmetric(horizontal: 10),
-//              child: Divider(
-//                thickness: 1,
-//              ),
-//            ),
-//          ),
-//          SizedBox(
-//            width: 20,
-//          ),
-//        ],
-//      ),
-//    );
-//  }
 
   Widget _title() {
     return RichText(
