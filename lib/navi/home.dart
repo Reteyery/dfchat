@@ -1,8 +1,8 @@
+import 'package:dfchat/navi/mine.dart';
+import 'package:dfchat/util/const.dart';
 import 'package:dfchat/widget/fragmentWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import 'login/login.dart';
 
 /// @author 李扬
 /// @title 主页（底部4个导航栏）
@@ -19,7 +19,7 @@ class _MyHomePageState extends State<HomeDart> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     FragmentWidget(Colors.white),
-    FragmentWidget(Colors.greenAccent),
+    FragmentWidget(Const.C_GREEN),
     FragmentWidget(Colors.deepOrange),
     FragmentWidget(Colors.pink),
   ];
@@ -29,7 +29,7 @@ class _MyHomePageState extends State<HomeDart> {
     return Scaffold(
       body: _children[_currentIndex],
       floatingActionButton: FloatingActionButton(
-        onPressed: incrementCounter,
+        onPressed: toMenu,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<HomeDart> {
         onTap: onTabSelected,
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.green,
+        selectedItemColor: (Const.C_GREEN),
         backgroundColor: Theme.of(context).primaryColor,
         items: <BottomNavigationBarItem>[
           new BottomNavigationBarItem(
@@ -68,9 +68,9 @@ class _MyHomePageState extends State<HomeDart> {
     });
   }
 
-  void incrementCounter() {
+  void toMenu() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => LoginDart()));
+        context, MaterialPageRoute(builder: (context) => MineDart()));
   }
 
   Text _getBarText(int index) {
