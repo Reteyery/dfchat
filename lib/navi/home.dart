@@ -1,5 +1,7 @@
 import 'package:dfchat/navi/mine.dart';
 import 'package:dfchat/util/const.dart';
+import 'package:dfchat/widget/fragmentMine.dart';
+import 'package:dfchat/widget/fragmentMusic.dart';
 import 'package:dfchat/widget/fragmentWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -18,10 +20,10 @@ class HomeDart extends StatefulWidget {
 class _MyHomePageState extends State<HomeDart> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    FragmentWidget(Colors.white),
+    FragmentWidget(Const.C_MAIN),
     FragmentWidget(Const.C_GREEN),
     FragmentWidget(Colors.deepOrange),
-    FragmentWidget(Colors.pink),
+    FragmentMineDart(),
   ];
 
   @override
