@@ -62,7 +62,7 @@ class _LoginPageState extends State<LoginDart> {
             gradient: LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
-                colors: [Colors.greenAccent, Colors.green])),
+                colors: [Colors.blueAccent, Colors.blue])),
         child: Text(
           '登录',
           style: TextStyle(fontSize: 20, color: Colors.white),
@@ -80,7 +80,7 @@ class _LoginPageState extends State<LoginDart> {
             textStyle: Theme.of(context).textTheme.display1,
             fontSize: 30,
             fontWeight: FontWeight.w700,
-            color: Const.C_GREEN,
+            color: Const.C_MAIN,
           ),
       ),
     );

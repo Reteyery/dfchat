@@ -18,7 +18,7 @@ class _MinePageState extends State<MineDart>{
         automaticallyImplyLeading: false,//隐藏返回按钮
         title: Text("设置",
         style: TextStyle(
-          color: Const.C_GREEN,
+          color: Const.C_MAIN,
 //          fontWeight: FontWeight.bold,
         ),),
         backgroundColor: Colors.white,
@@ -55,7 +55,7 @@ class _MinePageState extends State<MineDart>{
                 alignment: Alignment.centerLeft,
                 child: new Row(
                   children: <Widget>[
-                    new Icon(Icons.settings, size: 23, color: Const.C_GREEN),
+                    new Icon(Icons.settings, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
                     new Text("按回车键发送消息",
                       textAlign: TextAlign.start,
@@ -66,7 +66,7 @@ class _MinePageState extends State<MineDart>{
                     new Switch(value: true,
                       onChanged: null,
                       inactiveThumbColor: Colors.grey,
-                      activeColor: Const.C_GREEN,
+                      activeColor: Const.C_MAIN,
                       activeTrackColor: Const.C_GREEN
                     )
                   ],
@@ -81,7 +81,7 @@ class _MinePageState extends State<MineDart>{
                 alignment: Alignment.centerLeft,
                 child: new Row(
                   children: <Widget>[
-                    new Icon(Icons.settings, size: 23, color: Const.C_GREEN),
+                    new Icon(Icons.settings, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
                     new Text("允许多端同时在线",
                       textAlign: TextAlign.start,
@@ -92,7 +92,7 @@ class _MinePageState extends State<MineDart>{
                     new Switch(value: false,
                       onChanged: null,
                       inactiveThumbColor: Colors.grey,
-                      activeColor: Const.C_GREEN,
+                      activeColor: Const.C_MAIN,
                       activeTrackColor: Const.C_GREEN
                     )
                   ],
@@ -107,7 +107,7 @@ class _MinePageState extends State<MineDart>{
               alignment: Alignment.centerLeft,
                 child: new Row(
                   children: <Widget>[
-                    new Icon(Icons.mode_edit, size: 23, color: Const.C_GREEN),
+                    new Icon(Icons.mode_edit, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
                     new Text("修改密码",
                       textAlign: TextAlign.start,
@@ -127,7 +127,7 @@ class _MinePageState extends State<MineDart>{
               alignment: Alignment.centerLeft,
                 child: new Row(
                   children: <Widget>[
-                    new Icon(Icons.favorite, size: 23, color: Const.C_GREEN),
+                    new Icon(Icons.favorite, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
                     new Text("关于我们",
                       textAlign: TextAlign.start,
@@ -147,7 +147,7 @@ class _MinePageState extends State<MineDart>{
               alignment: Alignment.centerLeft,
               child: new Row(
                 children: <Widget>[
-                  new Icon(Icons.exit_to_app, size: 23, color: Const.C_GREEN),
+                  new Icon(Icons.exit_to_app, size: 23, color: Const.C_MAIN),
                   Padding(padding: EdgeInsets.only(left: 12)),
                   new Text("安全退出",
                     textAlign: TextAlign.start,

@@ -38,7 +38,7 @@ class _MyHomePageState extends State<HomeDart> {
         onTap: onTabSelected,
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.grey,
-        selectedItemColor: (Const.C_GREEN),
+        selectedItemColor: (Const.C_MAIN),
         backgroundColor: Theme.of(context).primaryColor,
         items: <BottomNavigationBarItem>[
           new BottomNavigationBarItem(
