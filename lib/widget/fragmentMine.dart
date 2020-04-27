@@ -1,6 +1,8 @@
 import 'package:dfchat/util/const.dart';
 import 'package:flutter/material.dart';
 
+/// @author 李扬
+/// @title 我的
 class FragmentMineDart extends StatefulWidget{
 
   @override
@@ -16,10 +18,10 @@ class _MineState extends State<FragmentMineDart>{
         automaticallyImplyLeading: false, //隐藏返回按钮
         title: Text("设置",
           style: TextStyle(
-            color: Const.C_MAIN,
+            color: Const.C_TEXT_BAR,
 //            fontWeight: FontWeight.bold,
           ),),
-        backgroundColor: Colors.white,
+        backgroundColor: Const.C_MAIN,
       ),
       body: Container(
         height: MediaQuery
