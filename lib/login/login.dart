@@ -59,10 +59,12 @@ class _LoginPageState extends State<LoginDart> {
                   blurRadius: 5,
                   spreadRadius: 2)
             ],
-            gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: [Colors.blueAccent, Colors.blue])),
+            color: Const.C_MAIN,
+//            gradient: LinearGradient(
+//                begin: Alignment.centerLeft,
+//                end: Alignment.centerRight,
+//                colors: [Colors.blueAccent, Colors.blue])
+        ),
         child: Text(
           '登录',
           style: TextStyle(fontSize: 20, color: Colors.white),

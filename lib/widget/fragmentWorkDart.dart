@@ -7,7 +7,6 @@ class FragmentWorkDart extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    List<String> titleString;
     return new Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false, //隐藏返回按钮
