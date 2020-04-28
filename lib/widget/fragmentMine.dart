@@ -35,17 +35,17 @@ class _MineState extends State<FragmentMineDart>{
         color: Colors.black12,
         child: Column(
           children: <Widget>[
-            new Container(
+            Container(
               height: 80,
               color: Colors.white,
               padding: EdgeInsets.only(left: 12),
-              child: new Row(
+              child: Row(
                 children: <Widget>[
-                  new Icon(Icons.account_circle,
+                  Icon(Icons.account_circle,
                     size: 60,
                   ),
                   Padding(padding: EdgeInsets.only(left: 12)),
-                  new Text("信息中心",
+                  Text("信息中心",
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.black54,
@@ -53,7 +53,7 @@ class _MineState extends State<FragmentMineDart>{
                 ],
               ),
             ),
-            new Container(
+            Container(
                 height: 60,
                 width: MediaQuery
                     .of(context)
@@ -63,17 +63,17 @@ class _MineState extends State<FragmentMineDart>{
                 margin: EdgeInsets.only(top: 0.5),
                 padding: EdgeInsets.only(left: 15),
                 alignment: Alignment.centerLeft,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Icon(Icons.settings, size: 23, color: Const.C_MAIN),
+                    Icon(Icons.settings, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
-                    new Text("按回车键发送消息",
+                    Text("按回车键发送消息",
                       textAlign: TextAlign.start,
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black54,
                       ),),
-                    new Switch(value: true,
+                    Switch(value: true,
                         onChanged: null,
                         inactiveThumbColor: Colors.grey,
                         activeColor: Const.C_MAIN,
@@ -82,7 +82,7 @@ class _MineState extends State<FragmentMineDart>{
                   ],
                 )
             ),
-            new Container(
+            Container(
                 height: 60,
                 width: MediaQuery
                     .of(context)
@@ -92,17 +92,17 @@ class _MineState extends State<FragmentMineDart>{
                 margin: EdgeInsets.only(top: 0.5),
                 padding: EdgeInsets.only(left: 15),
                 alignment: Alignment.centerLeft,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Icon(Icons.settings, size: 23, color: Const.C_MAIN),
+                    Icon(Icons.settings, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
-                    new Text("允许多端同时在线",
+                    Text("允许多端同时在线",
                       textAlign: TextAlign.start,
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black54,
                       ),),
-                    new Switch(value: false,
+                    Switch(value: false,
                         onChanged: null,
                         inactiveThumbColor: Colors.grey,
                         activeColor: Const.C_MAIN,
@@ -111,7 +111,7 @@ class _MineState extends State<FragmentMineDart>{
                   ],
                 )
             ),
-            new Container(
+            Container(
                 height: 60,
                 width: MediaQuery
                     .of(context)
@@ -121,11 +121,11 @@ class _MineState extends State<FragmentMineDart>{
                 margin: EdgeInsets.only(top: 0.5),
                 padding: EdgeInsets.only(left: 15),
                 alignment: Alignment.centerLeft,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Icon(Icons.mode_edit, size: 23, color: Const.C_MAIN),
+                    Icon(Icons.mode_edit, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
-                    new Text("修改密码",
+                    Text("修改密码",
                       textAlign: TextAlign.start,
                       style: TextStyle(
                         fontSize: 16,
@@ -134,7 +134,7 @@ class _MineState extends State<FragmentMineDart>{
                   ],
                 )
             ),
-            new Container(
+            Container(
                 height: 60,
                 width: MediaQuery
                     .of(context)
@@ -144,11 +144,11 @@ class _MineState extends State<FragmentMineDart>{
                 margin: EdgeInsets.only(top: 0.5),
                 padding: EdgeInsets.only(left: 15),
                 alignment: Alignment.centerLeft,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Icon(Icons.favorite, size: 23, color: Const.C_MAIN),
+                    Icon(Icons.favorite, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
-                    new Text("关于我们",
+                    Text("关于我们",
                       textAlign: TextAlign.start,
                       style: TextStyle(
                         fontSize: 16,
@@ -157,7 +157,7 @@ class _MineState extends State<FragmentMineDart>{
                   ],
                 )
             ),
-            new Container(
+            Container(
                 height: 60,
                 width: MediaQuery
                     .of(context)
@@ -167,11 +167,11 @@ class _MineState extends State<FragmentMineDart>{
                 margin: EdgeInsets.only(top: 0.5),
                 padding: EdgeInsets.only(left: 15),
                 alignment: Alignment.centerLeft,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Icon(Icons.exit_to_app, size: 23, color: Const.C_MAIN),
+                    Icon(Icons.exit_to_app, size: 23, color: Const.C_MAIN),
                     Padding(padding: EdgeInsets.only(left: 12)),
-                    new Text("安全退出",
+                    Text("安全退出",
                       textAlign: TextAlign.start,
                       style: TextStyle(
                         fontSize: 16,

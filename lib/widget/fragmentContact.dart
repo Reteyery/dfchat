@@ -8,7 +8,7 @@ class FragmentContactDart extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     List<String> titleString;
-    return new Scaffold(
+    return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false, //隐藏返回按钮
         title: Text("通讯录",
@@ -18,10 +18,10 @@ class FragmentContactDart extends StatelessWidget{
           ),),
         backgroundColor: Const.C_MAIN,
       ),
-      body: new Center(
+      body: Center(
           child: Container(
             color: Colors.white,
-            child: new Text("通讯录", style: TextStyle(
+            child: Text("通讯录", style: TextStyle(
                 color: Const.C_MAIN,
                 fontSize: 26
             ),),

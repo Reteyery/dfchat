@@ -7,7 +7,7 @@ class FragmentWorkDart extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false, //隐藏返回按钮
         title: Text("工作",
@@ -17,72 +17,72 @@ class FragmentWorkDart extends StatelessWidget{
           ),),
         backgroundColor: Const.C_MAIN,
       ),
-      body: new GridView(
+      body: GridView(
           children: <Widget>[
-            new Container(
+            Container(
               margin: EdgeInsets.only(top: 30),
               height: 60,
 //              color: Colors.red,
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new Icon(Icons.device_hub, size: Const.S_IM, color: Const.C_MAIN),
-                  new Padding(padding: EdgeInsets.only(top: 5)),
-                  new Text("计划管理")
+                  Icon(Icons.device_hub, size: Const.S_IM, color: Const.C_MAIN),
+                  Padding(padding: EdgeInsets.only(top: 5)),
+                  Text("计划管理")
                 ],
               ),
             ),
-            new Container(
+            Container(
               margin: EdgeInsets.only(top: 30),
               height: 60,
 //              color: Colors.orange,
               alignment: const Alignment(0, 0),
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new Icon(Icons.schedule, size: Const.S_IM, color: Const.C_MAIN),
-                  new Padding(padding: EdgeInsets.only(top: 5)),
-                  new Text("日程")
+                  Icon(Icons.schedule, size: Const.S_IM, color: Const.C_MAIN),
+                  Padding(padding: EdgeInsets.only(top: 5)),
+                  Text("日程")
                 ],
               ),
             ),
-            new Container(
+            Container(
               margin: EdgeInsets.only(top: 30),
               height: 60,
 //              color: Colors.greenAccent,
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new Icon(Icons.assignment, size: Const.S_IM, color: Const.C_MAIN),
-                  new Padding(padding: EdgeInsets.only(top: 5)),
-                  new Text("任务")
+                  Icon(Icons.assignment, size: Const.S_IM, color: Const.C_MAIN),
+                  Padding(padding: EdgeInsets.only(top: 5)),
+                  Text("任务")
                 ],
               ),
             ),
-            new Container(
+            Container(
               margin: EdgeInsets.only(top: 10),
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new Icon(Icons.supervisor_account, size: Const.S_IM, color: Const.C_MAIN),
-                  new Padding(padding: EdgeInsets.only(top: 5)),
-                  new Text("业务支持")
+                  Icon(Icons.supervisor_account, size: Const.S_IM, color: Const.C_MAIN),
+                  Padding(padding: EdgeInsets.only(top: 5)),
+                  Text("业务支持")
                 ],
               ),
             ),
-            new Container(
+            Container(
               margin: EdgeInsets.only(top: 10),
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new Icon(Icons.library_books, size: Const.S_IM, color: Const.C_MAIN),
-                  new Padding(padding: EdgeInsets.only(top: 5)),
-                  new Text("知识库")
+                  Icon(Icons.library_books, size: Const.S_IM, color: Const.C_MAIN),
+                  Padding(padding: EdgeInsets.only(top: 5)),
+                  Text("知识库")
                 ],
               ),
             ),
-            new Container(
+            Container(
               margin: EdgeInsets.only(top: 10),
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new Icon(Icons.inbox, size: Const.S_IM, color: Const.C_MAIN),
-                  new Padding(padding: EdgeInsets.only(top: 5)),
-                  new Text("网盘")
+                  Icon(Icons.inbox, size: Const.S_IM, color: Const.C_MAIN),
+                  Padding(padding: EdgeInsets.only(top: 5)),
+                  Text("网盘")
                 ],
               ),
             )

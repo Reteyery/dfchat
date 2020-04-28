@@ -36,7 +36,7 @@ class _MyHomePageState extends State<HomeDart> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
-      bottomNavigationBar: new BottomNavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: onTabSelected,
         type: BottomNavigationBarType.fixed,
@@ -44,19 +44,19 @@ class _MyHomePageState extends State<HomeDart> {
         selectedItemColor: (Const.C_MAIN),
         backgroundColor: Theme.of(context).primaryColor,
         items: <BottomNavigationBarItem>[
-          new BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.message),
             title: _getBarText(0),
           ),
-          new BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.perm_contact_calendar),
             title: _getBarText(1),
           ),
-          new BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.work),
             title: _getBarText(2),
           ),
-          new BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.person),
             title: _getBarText(3),
           ),
