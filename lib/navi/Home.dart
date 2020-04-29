@@ -1,9 +1,10 @@
-import 'package:dfchat/login/login.dart';
-import 'package:dfchat/util/const.dart';
-import 'package:dfchat/widget/fragmentContact.dart';
-import 'package:dfchat/widget/fragmentMessage.dart';
-import 'package:dfchat/widget/fragmentMine.dart';
-import 'package:dfchat/widget/fragmentWorkDart.dart';
+import 'package:dfchat/login/Login.dart';
+import 'package:dfchat/util/Const.dart';
+import 'package:dfchat/view/AnimatedFloatingActionButton.dart';
+import 'package:dfchat/widget/FragmentContact.dart';
+import 'package:dfchat/widget/FragmentMessage.dart';
+import 'package:dfchat/widget/FragmentMine.dart';
+import 'package:dfchat/widget/FragmentWorkDart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -27,14 +28,40 @@ class _MyHomePageState extends State<HomeDart> {
     FragmentMineDart(),
   ];
 
+  ///创建任务
+  Widget createTask() {
+    return Container(
+      child: FloatingActionButton(
+        onPressed: null,
+        heroTag: "task",
+        tooltip: 'task',
+        child: Icon(Icons.subject, color: Const.C_MAIN),
+      ),
+    );
+  }
+
+  ///创建日程
+  Widget createSchedule() {
+    return Container(
+      child: FloatingActionButton(
+        onPressed: null,
+        heroTag: "schedule",
+        tooltip: 'schedule',
+        child: Icon(Icons.schedule, color: Const.C_MAIN),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _children[_currentIndex],
-      floatingActionButton: FloatingActionButton(
-        onPressed: toMenu,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+      floatingActionButton: AnimatedFloatingActionButton(
+        fabButtons: <Widget>[
+          createTask(),
+          createSchedule()
+        ],
+        animatedIconData: AnimatedIcons.menu_close,
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
