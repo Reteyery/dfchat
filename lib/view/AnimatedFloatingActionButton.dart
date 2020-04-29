@@ -87,12 +87,12 @@ class _AnimatedFloatingActionButtonState
   Widget toggle() {
     return Container(
       child: FloatingActionButton(
-        backgroundColor: Colors.white,
         onPressed: animate,
         tooltip: 'Toggle',
+        elevation: 5,
         child: AnimatedIcon(
-          icon: widget.animatedIconData,
           color: Const.C_MAIN,
+          icon: widget.animatedIconData,
           progress: _animateIcon,
         ),
       ),

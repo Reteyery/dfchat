@@ -1,9 +1,36 @@
 import 'package:dfchat/util/Const.dart';
+import 'package:dfchat/view/AnimatedFloatingActionButton.dart';
 import 'package:flutter/material.dart';
 
 /// @author 李扬
 /// @title 工作
 class FragmentWorkDart extends StatelessWidget{
+
+  ///创建任务
+  Widget createTask() {
+    return Container(
+      child: FloatingActionButton(
+        onPressed: null,
+        heroTag: "task",
+        tooltip: 'task',
+        elevation: 5,
+        child: Icon(Icons.subject, color: Const.C_MAIN),
+      ),
+    );
+  }
+
+  ///创建日程
+  Widget createSchedule() {
+    return Container(
+      child: FloatingActionButton(
+        onPressed: null,
+        heroTag: "schedule",
+        tooltip: 'schedule',
+        elevation: 5,
+        child: Icon(Icons.schedule, color: Const.C_MAIN),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +43,14 @@ class FragmentWorkDart extends StatelessWidget{
 //            fontWeight: FontWeight.bold,
           ),),
         backgroundColor: Const.C_MAIN,
+      ),
+      floatingActionButton: AnimatedFloatingActionButton(
+        fabButtons: <Widget>[
+          createTask(),
+          createSchedule()
+        ],
+        ///这是flutter一组内置的动画Icon,具体搜索相关api
+        animatedIconData: AnimatedIcons.menu_close,
       ),
       body: GridView(
           children: <Widget>[

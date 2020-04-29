@@ -3,11 +3,16 @@ import 'package:flutter/material.dart';
 
 /// @author 李扬
 /// @title 消息
-class FragmentMessageDart extends StatelessWidget{
+class FragmentMessageDart extends StatefulWidget{
+
+  @override
+  _MessageState createState() => _MessageState();
+}
+
+class _MessageState extends State<FragmentMessageDart>{
 
   @override
   Widget build(BuildContext context) {
-    List<String> titleString;
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false, //隐藏返回按钮
@@ -18,6 +23,7 @@ class FragmentMessageDart extends StatelessWidget{
             ),),
           backgroundColor: Const.C_MAIN,
         ),
+
         body: Center(
             child: Container(
               color: Colors.white,
@@ -29,4 +35,5 @@ class FragmentMessageDart extends StatelessWidget{
         )
     );
   }
+
 }

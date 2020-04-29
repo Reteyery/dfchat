@@ -28,41 +28,10 @@ class _MyHomePageState extends State<HomeDart> {
     FragmentMineDart(),
   ];
 
-  ///创建任务
-  Widget createTask() {
-    return Container(
-      child: FloatingActionButton(
-        onPressed: null,
-        heroTag: "task",
-        tooltip: 'task',
-        child: Icon(Icons.subject, color: Const.C_MAIN),
-      ),
-    );
-  }
-
-  ///创建日程
-  Widget createSchedule() {
-    return Container(
-      child: FloatingActionButton(
-        onPressed: null,
-        heroTag: "schedule",
-        tooltip: 'schedule',
-        child: Icon(Icons.schedule, color: Const.C_MAIN),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _children[_currentIndex],
-      floatingActionButton: AnimatedFloatingActionButton(
-        fabButtons: <Widget>[
-          createTask(),
-          createSchedule()
-        ],
-        animatedIconData: AnimatedIcons.menu_close,
-      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: onTabSelected,
