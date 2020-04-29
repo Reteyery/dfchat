@@ -4,7 +4,7 @@ import 'login/Login.dart';
 
 void main() => runApp(MyApp());
 
-/// @author 李扬
+/// @author rete
 /// @title 首页
 class MyApp extends StatelessWidget {
   @override

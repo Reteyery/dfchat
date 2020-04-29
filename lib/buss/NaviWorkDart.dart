@@ -2,7 +2,7 @@ import 'package:dfchat/util/Const.dart';
 import 'package:dfchat/view/AnimatedFloatingActionButton.dart';
 import 'package:flutter/material.dart';
 
-/// @author 李扬
+/// @author rete
 /// @title 工作
 class NaviWorkDart extends StatelessWidget{
 
@@ -40,7 +40,6 @@ class NaviWorkDart extends StatelessWidget{
         title: Text("工作",
           style: TextStyle(
             color: Const.C_TEXT_BAR,
-//            fontWeight: FontWeight.bold,
           ),),
         backgroundColor: Const.C_MAIN,
       ),
@@ -57,7 +56,6 @@ class NaviWorkDart extends StatelessWidget{
             Container(
               margin: EdgeInsets.only(top: 30),
               height: 60,
-//              color: Colors.red,
               child: Column(
                 children: <Widget>[
                   Icon(Icons.device_hub, size: Const.S_IM, color: Const.C_MAIN),
@@ -69,7 +67,6 @@ class NaviWorkDart extends StatelessWidget{
             Container(
               margin: EdgeInsets.only(top: 30),
               height: 60,
-//              color: Colors.orange,
               alignment: const Alignment(0, 0),
               child: Column(
                 children: <Widget>[
@@ -82,7 +79,6 @@ class NaviWorkDart extends StatelessWidget{
             Container(
               margin: EdgeInsets.only(top: 30),
               height: 60,
-//              color: Colors.greenAccent,
               child: Column(
                 children: <Widget>[
                   Icon(Icons.assignment, size: Const.S_IM, color: Const.C_MAIN),

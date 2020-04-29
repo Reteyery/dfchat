@@ -7,7 +7,7 @@ import 'package:dfchat/util/Const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-/// @author 李扬
+/// @author rete
 /// @title 主页（底部4个导航栏）
 class HomeDart extends StatefulWidget {
   HomeDart({Key key, this.title}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:dfchat/util/Const.dart';
 import 'package:flutter/material.dart';
 
-/// @author 李扬
+/// @author rete
 /// @title 通讯录
 class NaviContactDart extends StatelessWidget{
 
@@ -14,7 +14,6 @@ class NaviContactDart extends StatelessWidget{
         title: Text("通讯录",
           style: TextStyle(
             color: Const.C_TEXT_BAR,
-//            fontWeight: FontWeight.bold,
           ),),
         backgroundColor: Const.C_MAIN,
       ),

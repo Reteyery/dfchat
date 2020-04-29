@@ -1,7 +1,7 @@
 import 'package:dfchat/util/Const.dart';
 import 'package:flutter/material.dart';
 
-/// @author 李扬
+/// @author rete
 /// @title 消息
 class NaviMessageDart extends StatefulWidget{
 
@@ -19,7 +19,6 @@ class _MessageState extends State<NaviMessageDart>{
           title: Text("消息",
             style: TextStyle(
               color: Const.C_TEXT_BAR,
-//            fontWeight: FontWeight.bold,
             ),),
           backgroundColor: Const.C_MAIN,
         ),

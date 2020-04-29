@@ -3,7 +3,7 @@ import 'package:dfchat/util/Const.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// @author 李扬
+/// @author rete
 /// @title 登录页
 class LoginDart extends StatefulWidget {
   LoginDart({Key key, this.title}) : super(key: key);

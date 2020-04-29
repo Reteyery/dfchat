@@ -1,7 +1,7 @@
 import 'package:dfchat/util/Const.dart';
 import 'package:flutter/material.dart';
 
-/// @author 李扬
+/// @author rete
 /// @title 我的
 class NaviMineDart extends StatefulWidget{
 
@@ -19,7 +19,6 @@ class _MineState extends State<NaviMineDart>{
         title: Text("设置",
           style: TextStyle(
             color: Const.C_TEXT_BAR,
-//            fontWeight: FontWeight.bold,
           ),),
         backgroundColor: Const.C_MAIN,
       ),

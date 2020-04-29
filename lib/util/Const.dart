@@ -1,9 +1,7 @@
-
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
-/// @author 李扬
+/// @author rete
 /// @title 常量
 class Const{
 
