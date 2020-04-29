@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 /// @author 李扬
 /// @title 工作
-class FragmentWorkDart extends StatelessWidget{
+class NaviWorkDart extends StatelessWidget{
 
   ///创建任务
   Widget createTask() {

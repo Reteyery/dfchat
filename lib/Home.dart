@@ -1,10 +1,9 @@
+import 'package:dfchat/buss/NaviContact.dart';
+import 'package:dfchat/buss/NaviMessage.dart';
+import 'package:dfchat/buss/NaviMine.dart';
+import 'package:dfchat/buss/NaviWorkDart.dart';
 import 'package:dfchat/login/Login.dart';
 import 'package:dfchat/util/Const.dart';
-import 'package:dfchat/view/AnimatedFloatingActionButton.dart';
-import 'package:dfchat/widget/FragmentContact.dart';
-import 'package:dfchat/widget/FragmentMessage.dart';
-import 'package:dfchat/widget/FragmentMine.dart';
-import 'package:dfchat/widget/FragmentWorkDart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -22,10 +21,10 @@ class HomeDart extends StatefulWidget {
 class _MyHomePageState extends State<HomeDart> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    FragmentMessageDart(),
-    FragmentContactDart(),
-    FragmentWorkDart(),
-    FragmentMineDart(),
+    NaviMessageDart(),
+    NaviContactDart(),
+    NaviWorkDart(),
+    NaviMineDart(),
   ];
 
   @override

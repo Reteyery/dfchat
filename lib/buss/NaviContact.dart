@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 /// @author 李扬
 /// @title 通讯录
-class FragmentContactDart extends StatelessWidget{
+class NaviContactDart extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {

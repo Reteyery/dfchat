@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 /// @author 李扬
 /// @title 我的
-class FragmentMineDart extends StatefulWidget{
+class NaviMineDart extends StatefulWidget{
 
   @override
   _MineState createState() => _MineState();
 
 }
 
-class _MineState extends State<FragmentMineDart>{
+class _MineState extends State<NaviMineDart>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(

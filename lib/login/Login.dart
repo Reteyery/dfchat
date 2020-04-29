@@ -1,4 +1,4 @@
-import 'package:dfchat/navi/Home.dart';
+import 'package:dfchat/Home.dart';
 import 'package:dfchat/util/Const.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 /// @author 李扬
 /// @title 消息
-class FragmentMessageDart extends StatefulWidget{
+class NaviMessageDart extends StatefulWidget{
 
   @override
   _MessageState createState() => _MessageState();
 }
 
-class _MessageState extends State<FragmentMessageDart>{
+class _MessageState extends State<NaviMessageDart>{
 
   @override
   Widget build(BuildContext context) {
