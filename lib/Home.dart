@@ -1,7 +1,7 @@
 import 'package:dfchat/buss/NaviContact.dart';
 import 'package:dfchat/buss/NaviMessage.dart';
 import 'package:dfchat/buss/NaviMine.dart';
-import 'package:dfchat/buss/NaviWorkDart.dart';
+import 'package:dfchat/buss/NaviWork.dart';
 import 'package:dfchat/login/Login.dart';
 import 'package:dfchat/util/Const.dart';
 import 'package:flutter/material.dart';
